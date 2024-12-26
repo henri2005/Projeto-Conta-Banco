@@ -8,6 +8,7 @@ package ContaBanco;
  *
  * @author Cliente
  */
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaUsuario {
@@ -16,7 +17,7 @@ public class ContaUsuario {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in).useLocale(Locale.US);
         
         System.out.println("Informe seu nome e sobrenome: ");
         String nomeCliente = sc.next();
